@@ -1,4 +1,3 @@
-import './app.css'
 import { MainView } from './views/main/main'
 
 class App {
@@ -18,6 +17,7 @@ class App {
 		}
 
 		const view = this.routes.find(r => r.path == location.hash).view
+
 		this.currentView = new view(this.appState)
 		this.currentView.render()
 	}

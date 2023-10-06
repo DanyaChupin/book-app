@@ -6,9 +6,10 @@ export class Header extends DivComponent {
 		super()
 		this.appState = appState
 	}
+
 	render() {
-		this.el.innerHTML = ''
 		this.el.classList.add('header')
+
 		this.el.innerHTML = `
 			<div>
 			<img src="/static/logo.svg" alt='Logo'/>
